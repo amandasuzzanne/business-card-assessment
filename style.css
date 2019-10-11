@@ -1,8 +1,8 @@
 /*specificities of the selectors*/
-.card article img /*3*/
-.card footer /*1*/
-.card header /*1*/
-.card /*0*/
+.card article img /*12*/
+.card footer /*11*/
+.card header /*11*/
+.card /*10*/
 
 
 /*General page styles*/
@@ -16,29 +16,66 @@ body {
     background-color: #ccc;
   }
 
-  /*Card container setup styles*/
-  card article image{
-    float: left;
-    max-height: 100%
-  }
-
-  /*Header and footer styles*/
-  header{
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
-    border-radius: 1.5em 1.5em 0 0;
-  }
   
-  footer{
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-    border-radius: 0 0 1.5em 1.5em;
-  }
-
-  /*Main business card contents styles*/
-  card{
+  .card{
     width: 35em;
     height: 22em;
     margin: 5em auto;
     background-color: red;
     border: 0.2em solid black;
     border-radius: 1.5em;
+    line-height: 15px;
   }
+  
+  .card article img{
+    float: right;
+    max-height: 100%;
+  }
+
+  .card header{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+  }
+  
+  .card footer{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+  }
+
+  /*Main business card contents styles*/
+  h2,p {
+    margin: 0;
+}
+
+article{
+    height: 12em;
+    background-color: rgba(0,0,0,0.5);
+}
+
+  /*Card container setup styles*/
+  /*Header and footer styles*/
+  header, footer{
+      height: 5em;
+      content: 1.875em;
+  }
+
+  header h2{
+      font-size: 2em;
+      line-height: 1.5em;
+      padding: 10px 10px 10pm 1px;
+  }
+
+  footer p{
+      font-size: 1.5em;
+      padding: 10px 10px 10pm 6px;
+  }
+
+  article p{
+      color: aliceblue;
+      padding: 10px 10px 10pm 9px;
+  }
+
+  header h2, footer p, article p{
+      margin-left: 1em;
+  }
+
